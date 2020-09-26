@@ -1,0 +1,33 @@
+body {width: 100%; height:100%; font-family: 'Press Start 2P', cursive;text-align:center;}
+
+		.back {width: 100%; height: 750px; background-color:green;position: absolute;bottom: 0;}
+		.grass {width: 100%; height: 50px; display: flex; position: absolute; bottom: 750px;}
+		.g1 {width: 50px; height: 50px; margin: 0px 80px; background-color: green;}
+		.g2 {width: 100px; height: 50px; margin: 0px 180px; background-color: green;}
+		p {font-size: 4em; padding-top: 80px; 
+			animation: opa2 2s; animation-fill-mode: forwards;}
+
+			@keyframes opa2 {70%{opacity: 100%;}  100%{opacity: 0%;}}
+
+
+
+		/* 마우스 오버 강아지*/
+		.container {width: 350px; height: 350px;
+		background-color: green; position: absolute; bottom: 200px; left: calc(50% - 175px);}
+
+		.box, .box2 {width: 50px; height: 50px; background-color: green;
+			float: left;
+			transform: rotate(0deg);transition-property: all;transition-duration: 0.5s;
+			animation: opa 1s; animation-fill-mode: forwards; animation-play-state: paused;}
+		.box:hover {transform: rotate(90deg) scale(0.5, 0.5);
+		animation-play-state:running;}
+		@keyframes opa { 0%{opacity: 50%;} 100%{opacity: 100%; background-color: #E8DAB3; } }
+
+		.line{width: 50px; height: 50px; background-color: green;
+			float: left;
+		transform: translateY(0px;)rotate(0deg); transition-property: all; transition-duration: 0.5s;
+		animation: back 1s; animation-fill-mode: forwards;animation-play-state: paused;}
+		.line:hover {transform: translateY(-50px;) rotate(90deg);
+		animation-play-state:running;}
+		@keyframes back { 0%{ } 
+		100%{ background-color: black;} }
